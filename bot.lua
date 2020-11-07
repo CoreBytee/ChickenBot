@@ -13,10 +13,20 @@ PingCommand:SetFunction(function(MSG, Args, Raw)
     MSG:reply("Pong! <:hotcomputer:685867382073196712>")
 end)
 
-ChickenCommand = Handler.New()
+local ChickenCommand = Handler.New()
 ChickenCommand:SetName("chicken")
 ChickenCommand:SetFunction(function(MSG, Args, Raw)
     MSG:reply("Here you go have some chicken!\nhttps://i.pinimg.com/originals/e8/36/7a/e8367a927b1859ea50028a031ea4b996.png")
+end)
+
+local FeatherCommand = Handler.New()
+FeatherCommand:SetName("feather")
+FeatherCommand:SetFunction(function(MSG, Args, Raw)
+    MSG:reply("You have " .. math.random(0, 1000) .. " Feathers! <:tf2chicken:774704830060429313>")
+end)
+
+Client:on("ready", function()
+    Client:setGame({name = "Cursed", type = 0})
 end)
 
 local http = require('http')
