@@ -25,6 +25,19 @@ FeatherCommand:SetFunction(function(MSG, Args, Raw)
     MSG:reply("You have **" .. math.random(0, 1000) .. "** Feathers! <:tf2chicken:774704830060429313>")
 end)
 
+local InfoCommand = Handler.New()
+InfoCommand:SetName("info")
+InfoCommand:SetFunction(function(MSG, Args, Raw)
+    MSG:reply(
+        {
+            content = MSG.author.mentionString, embed = {
+                title = "Chicken-Bot",
+                description = "A bot created just for fun\n!Chicken\n!Feather\n\nCreated by [**CoreByte#1161**](https://discord.com/channels/@me/533536581055938580)",
+            }
+        }
+    )
+end)
+
 Client:on("ready", function()
     Client:setGame({name = "Cursed", type = 0})
 end)
