@@ -43,7 +43,7 @@ InfoCommand:SetFunction(function(MSG, Args, Raw)
 end)
 
 Client:on("ready", function()
-    Client:setGame({name = "C H I C K E N", type = 0})
+    Client:setGame({name = "C H I C K E N | !info", type = 0})
 end)
 
 local http = require('http')
