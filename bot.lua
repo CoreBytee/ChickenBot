@@ -22,7 +22,7 @@ end)
 local FeatherCommand = Handler.New()
 FeatherCommand:SetName("feather")
 FeatherCommand:SetFunction(function(MSG, Args, Raw)
-    MSG:reply("You have " .. math.random(0, 1000) .. " Feathers! <:tf2chicken:774704830060429313>")
+    MSG:reply("You have **" .. math.random(0, 1000) .. "** Feathers! <:tf2chicken:774704830060429313>")
 end)
 
 Client:on("ready", function()
