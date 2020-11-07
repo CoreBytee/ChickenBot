@@ -17,7 +17,7 @@ local ChickenCommand = Handler.New()
 ChickenCommand:SetName("chicken")
 ChickenCommand:SetFunction(function(MSG, Args, Raw)
 
-	local PossibleMessages = {"Here you go have some chicken!", "Not for you!", "Got A Bucket O Chicken", "NOM NOM NOM"}
+	local PossibleMessages = {"Here you go have some chicken!", "Not for you!", "Got A Bucket O Chicken", "NOM NOM NOM", "C H I C K E N"}
 
     MSG:reply({content = PossibleMessages[math.random(1, #PossibleMessages)],
 	embed = {image = {url = "https://i.pinimg.com/originals/e8/36/7a/e8367a927b1859ea50028a031ea4b996.png"}}})
@@ -36,7 +36,7 @@ InfoCommand:SetFunction(function(MSG, Args, Raw)
         {
             content = MSG.author.mentionString, embed = {
                 title = "Chicken-Bot",
-                description = "A bot created just for fun\n!Chicken\n!Feather\n\nCreated by [**CoreByte#1161**](https://discord.com/channels/@me/533536581055938580)\nView [**source code**](https://github.com/CoreBytee/ChickenBot)",
+                description = "C H I C K E N\nA bot created just for fun\n!Chicken\n!Feather\n\nCreated by [**CoreByte#1161**](https://discord.com/channels/@me/533536581055938580)\nView [**source code**](https://github.com/CoreBytee/ChickenBot)",
             }
         }
     )
