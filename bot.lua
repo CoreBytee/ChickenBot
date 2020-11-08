@@ -29,6 +29,12 @@ FeatherCommand:SetFunction(function(MSG, Args, Raw)
     MSG:reply("You have **" .. math.random(0, 1000) .. "** Feathers! <:tf2chicken:774704830060429313>")
 end)
 
+local BonkCommand = Handler.New()
+BonkCommand:SetName("bonk")
+BonkCommand:SetFunction(function(MSG, Args, Raw)
+    MSG:reply("https://33.media.tumblr.com/e8bbd2144cfd5ad9b022c02e4eb205e9/tumblr_njsou9DxeB1tjsfjuo1_500.gif")
+end)
+
 local InfoCommand = Handler.New()
 InfoCommand:SetName("info")
 InfoCommand:SetFunction(function(MSG, Args, Raw)
@@ -47,6 +53,8 @@ Client:on("ready", function()
 end)
 
 local http = require('http')
+
+
 
 http.createServer(function (req, res)
   local body = "Hello world\n"
