@@ -42,7 +42,12 @@ InfoCommand:SetFunction(function(MSG, Args, Raw)
         {
             content = MSG.author.mentionString, embed = {
                 title = "Chicken-Bot",
-                description = "C H I C K E N\nA bot created just for fun\n!Chicken\n!Feather\n\nCreated by [**CoreByte#1161**](https://discord.com/channels/@me/533536581055938580)\nView [**source code**](https://github.com/CoreBytee/ChickenBot)",
+                description = "C H I C K E N\nA bot created just for fun\n!Chicken\n!Feather\n!bonk\n\nCreated by [**CoreByte#1161**](https://discord.com/channels/@me/533536581055938580)\nView [**source code**](https://github.com/CoreBytee/ChickenBot)\nJoin [**Cubic Inc.**](http://cubicdiscord.ga)",
+
+								author = {
+									name = "Part of cubic inc",
+									icon_url = "https://cdn.discordapp.com/attachments/762660805534679050/762661612372099072/Logo_Smaller_can.png"
+								}
             }
         }
     )
