@@ -55,6 +55,8 @@ end)
 
 Client:on("ready", function()
     Client:setGame({name = "C H I C K E N | !info", type = 0})
+
+		print("in ", #Client.guilds, "Servers")
 end)
 
 local http = require('http')
